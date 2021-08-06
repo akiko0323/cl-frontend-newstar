@@ -16,7 +16,7 @@ import { HeroSearchComponent }  from './hero-search/hero-search.component';
 import { HeroService }          from './hero.service';
 import { MessageService }       from './message.service';
 import { MessagesComponent }    from './messages/messages.component';
-import { BonusPointModule } from './bonus-point/bonus-point.module';
+import { BonusPointModule }     from './bonus-point/bonus-point.module';
 
 @NgModule({
   imports: [
