@@ -14,3 +14,43 @@
 img {
   max-width: 100%;
 }
+.flex-wrap {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.col {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #666;
+  display: inline-flex;
+  justify-content: center;
+  color: #666;
+}
+.col h3{
+  font-size: 2em;
+  margin: 0;
+  align-self: center;
+}
+
+.grid-wrap {  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  text-align: center;  
+}
+.grid{
+  border: 1px solid #353535;
+	display: grid;
+}
+.grid h3 {
+  font-size: 2em;
+  margin:auto;
+}
+.grid:first-child {
+  grid-area:1/1/3/2;
+}
+.grid:last-child {
+  grid-area:3/2/4/4;
+}
