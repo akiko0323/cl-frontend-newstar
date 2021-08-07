@@ -8,9 +8,12 @@ export class MessageService {
     this.messages.push(message);
   }
 
-  clear() {
-    if (window.confirm("Do you really want to clear?")) {
-      this.messages = [];
+  clear(val= null) {
+    var msg = window.confirm("Do you really want to clear?")
+    if (msg) { 
+      val ? (this.messages = this.messages.slice(5)) :
+      (this.messages = []) ;
     }
   }
 }
+
